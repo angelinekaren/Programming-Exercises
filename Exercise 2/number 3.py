@@ -1,4 +1,4 @@
-print("A Shinigami [verb] my [adjective] [noun] out of the [noun] as if he were a vegetarian fishing a [noun]"
+print("A Shinigami [verb] my [adjective] [noun] out of the [noun] as if he were a vegetarian fishing a [noun] "
       "out of his salad.")
 verb = input("Enter a verb:")
 adjective = input("Enter an adjective:")
