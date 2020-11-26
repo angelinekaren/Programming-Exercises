@@ -6,7 +6,7 @@ with open('pokemon.txt', 'r') as pokemon:
 word = file.split()
 
 
-def play(word):
+def play():
     player_turn = 0
     used_words = []
     last_word = ''
@@ -51,6 +51,5 @@ def play(word):
                 break
 
 
-
 if __name__ == '__main__':
-    play(word)
+    play()
