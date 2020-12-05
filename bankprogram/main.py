@@ -73,7 +73,7 @@ def bank_manager_menu():
     password = input('Enter your password: ')
     if username in staffManager.keys() and password == staffManager[username]:
         print('Successfully login! Choose:')
-        print('1. Check all customers''\n''2. Check number of customers''\n''3. Add new account')
+        print('1. Check all customers''\n''2. Check number of customers''\n''3. Add new account''\n''4. Get customer')
         for_answer = input('(1/2/3): ')
         if for_answer == '1':
             print('All customers: ', bCa.customers)
@@ -103,10 +103,13 @@ def bank_manager_menu():
                 bank_manager_menu()
             if answer == 'No':
                 main()
+        if for_answer == '4':
+            print('Get the customer')
+            for_input = int(input('Enter the number of the customer: '))
+            print('The number is for customer name', bCa.getCustomer(for_input))
     else:
         print('You are not authenticated as a staff user')
         main()
-
 
 def customer_menu():
     customer_input = input('Dear customer, do you already have an account? (Yes/No): ')
